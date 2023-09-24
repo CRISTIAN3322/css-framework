@@ -1,0 +1,28 @@
+/* Definimos las Custom properties */
+:root{
+    /* Colores */
+    --negro         : #393939;
+    --blanco        : #fff;
+    --indigo        : #6610f2;
+    --azul          : #0d6efd;
+    --morado        : #6e42c1e1;
+    --rojo          : #dc3545;
+    --naranja       : #fd7e14;
+    --amarillo      : #ffc107;
+    --verde         : #198754;
+    --teal          : #20c997;
+    --gris          : #adb5bd;
+    --fondo         : #f2f2f2;
+    
+    /* Tipografía */
+    --tipo-principal   : 'Roboto', sans-serif;
+    --tipo-secundaria  : Verdana;
+
+    /* Breakpoint */
+    --xs: 0;
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+  }

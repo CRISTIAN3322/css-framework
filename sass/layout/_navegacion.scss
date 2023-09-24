@@ -1,0 +1,27 @@
+.nav {
+	background: var(--negro);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px auto;
+}
+
+.nav a {
+	color: var(--blanco);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 15px 25px;
+	transition: .3s ease all;
+	font-size: 18px;
+}
+
+.nav a.activo,
+.nav a:hover {
+	background: var(--gris);
+}
