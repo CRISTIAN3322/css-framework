@@ -186,6 +186,15 @@ body {
 }
 
 /* ========== 👉 Navegación ========== */
+.barra {
+  background: var(--negro);
+  color: var(--gris);
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .nav {
   background: var(--negro);
   display: flex;
@@ -212,6 +221,65 @@ body {
 .nav a.activo,
 .nav a:hover {
   background: var(--gris);
+}
+
+/* ========== 👉 Menú Temario ========== */
+.temario {
+  padding: 0 15px;
+}
+
+.temario_titulo {
+  margin-bottom: 10px;
+}
+
+.temario_contenedor {
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.temario_lista {
+  border-left: 2px solid var(--gris);
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.temario_lista--li {
+  position: relative;
+}
+.temario_lista--li:hover::before {
+  border: 2px solid var(--naranja);
+}
+.temario_lista--li.activo::before {
+  background: var(--rojo);
+  border: 3px solid var(--naranja);
+}
+.temario_lista--li.activo .temario_link {
+  color: var(--negro);
+  font-weight: 700;
+}
+.temario_lista--li::before {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  background: var(--fondo);
+  border: 2px solid var(--amarillo);
+  position: absolute;
+  left: -17px;
+  transform: rotate(45deg);
+  top: calc(50% - 6px);
+  transition: 0.3s ease all;
+}
+
+.temario_link {
+  display: block;
+  color: #5a5a5a;
+  padding: 15px 10px;
+  transition: 0.3s ease all;
+}
+.temario_link:hover {
+  color: var(--negro);
+  font-weight: 700;
 }
 
 /* ========== 👉 Formularios ========== */
@@ -454,6 +522,7 @@ form .input:focus {
 /* ========== 👉 Componentes ========== */
 .card {
   padding: 40px;
+  margin: 50px;
   background: var(--blanco);
   border-radius: 3px;
   box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
@@ -472,6 +541,18 @@ form .input:focus {
 .display-3 {
   font-weight: 700;
   font-size: 2.75rem;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #141414;
+  border: 5px solid #141414;
+  padding: 5px 10px;
+  display: inline-block;
 }
 
 /* ========== 👉 Botones ========== */
@@ -498,6 +579,147 @@ form .input:focus {
 
 .boton.verde:hover {
   background: var(--teal);
+}
+
+/* ==========  🔹 Botones Animados ========== */
+/* ! Estilo por defecto del Botón */
+.falconBtn {
+  display: inline-flex;
+  width: 100%;
+  height: 80px;
+  background: var(--negro);
+  color: var(--blanco);
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.falconBtn span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+.falconBtn.uno::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--gris);
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: 0.3s ease-in-out all;
+}
+.falconBtn.uno:hover::after {
+  top: 0;
+}
+.falconBtn.dos::after {
+  content: "";
+  width: 135%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(-140% - 80px);
+  border-bottom: 80px solid var(--azul);
+  border-right: 80px solid transparent;
+  transition: 0.9s ease-in-out all;
+}
+.falconBtn.dos:hover::after {
+  left: 0;
+}
+.falconBtn.tres::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background: var(--naranja);
+  position: absolute;
+  z-index: 1;
+  top: -300px;
+  left: 0;
+  transition: 0.9s ease-in-out all;
+  border-radius: 0 0 300px 300px;
+}
+.falconBtn.tres:hover::after {
+  top: 0;
+}
+.falconBtn.cuatro::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 47%;
+  transition: 0.9s ease-in-out all;
+  border-radius: 100px;
+  transform-origin: center;
+}
+.falconBtn.cuatro:hover::after {
+  transform: scale(300);
+  background: var(--rojo);
+}
+.falconBtn.cuatro:hover {
+  background: #960909;
+}
+.falconBtn.cinco span {
+  transition: 0.5s ease-in-out all;
+  position: absolute;
+  left: 40%;
+}
+.falconBtn.cinco:hover {
+  background: var(--verde);
+}
+.falconBtn.cinco .icono {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -40px;
+  transition: 0.9s ease-in-out all;
+  opacity: 0;
+}
+.falconBtn.cinco svg {
+  color: var(--blanco);
+  width: 35px;
+  height: 35px;
+}
+.falconBtn.cinco:hover .icono {
+  left: calc(100% - 50px);
+  opacity: 1;
+}
+.falconBtn.cinco:hover span {
+  left: 20px;
+}
+.falconBtn.seis {
+  background: none;
+  color: var(--negro);
+}
+.falconBtn.seis svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+.falconBtn.seis rect {
+  width: 100%;
+  height: 100%;
+  stroke: var(--negro);
+  stroke-width: 10px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: 0.9s ease all;
+}
+.falconBtn.seis:hover rect {
+  stroke-dashoffset: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
