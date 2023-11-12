@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 👉 Framework  -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Boton 5</title>
+
+    <style>
+        pre{
+            background: black;
+            color: aliceblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+<body>
+
+    <header class="contenedor-ancho texto-centrado">
+		<h1 class="titulo" id="#botones"><a href="/view/botones.html">Botones </a></h1>
+	</header>
+
+    <div class="contenedor grid col-3 col-1">
+        <div class="span-1 med-span-3">
+            <a class="falconBtn btn-5" href="/view/botones.html">
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                </div>
+                <span>Botón 5</span>
+            </a>
+        </div>
+        <div class="span-2 med-span-3">
+      
+                <h2>HTML</h2>
+                <pre>
+                    &lt;a class="falconBtn btn-5"&gt;
+                        &lt;div class="icono"&gt;
+                            &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"&gt;
+                                &lt;path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/&gt;
+                              &lt;/svg&gt;
+                        &lt;/div&gt;
+                        &lt;span>Botón 5&lt;/span&gt;
+                    &lt;/a&gt; 
+                </pre>   
+
+ 
+                <h2>CSS</h2>
+                <pre>
+                    .falconBtn.btn-5 span {
+                        transition: 0.5s ease-in-out all;
+                        position: absolute;
+                        left: 40%;
+                      }
+                      .falconBtn.btn-5:hover {
+                        background: var(--verde);
+                      }
+                      .falconBtn.btn-5 .icono {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        z-index: 2;
+                        left: -40px;
+                        transition: 0.9s ease-in-out all;
+                        opacity: 0;
+                      }
+                      .falconBtn.btn-5 svg {
+                        color: var(--blanco);
+                        width: 35px;
+                        height: 35px;
+                      }
+                      .falconBtn.btn-5:hover .icono {
+                        left: calc(100% - 50px);
+                        opacity: 1;
+                      }
+                      .falconBtn.btn-5:hover span {
+                        left: 20px;
+                      }
+                </pre>
+        </div>
+    </div>
+    
+</body>
+</html>

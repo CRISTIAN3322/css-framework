@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 👉 Framework  -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Boton 2</title>
+
+    <style>
+        pre{
+            background: black;
+            color: aliceblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+<body>
+
+    <header class="contenedor-ancho texto-centrado">
+		<h1 class="titulo" id="#botones"><a href="/view/botones.html">Botones 2</a></h1>
+	</header>
+
+    <div class="contenedor grid col-3 col-1">
+        <div class="span-1 med-span-3">
+            <a class="falconBtn btn-2" href="/view/botones.html"><span>Botón 2</span></a>	
+        </div>
+        <div class="span-2 med-span-3">
+      
+                <h2>HTML</h2>
+                <pre>
+                    &lt;a class="falconBtn btn-2"&gt;
+                        &lt;span&gt; Botón 2 &lt;/span&gt;
+                    &lt;/a&gt;                    
+                </pre>
+    
+
+ 
+                <h2>CSS</h2>
+                <pre>
+                    .falconBtn.btn-2::after {
+                        content: "";
+                        width: 135%;
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        left: calc(-140% - 80px);
+                        border-bottom: 80px solid var(--azul);
+                        border-right: 80px solid transparent;
+                        transition: 0.9s ease-in-out all;
+                      }
+                      .falconBtn.btn-2:hover::after {
+                        left: 0;
+                      }
+                </pre>
+        </div>
+    </div>
+    
+</body>
+</html>
