@@ -1,23 +1,31 @@
 /* Definimos las Custom properties */
-:root{
-    /* Colores */
-    --negro         : #393939;
-    --blanco        : #fff;
-    --indigo        : #6610f2;
-    --azul          : #0d6efd;
-    --morado        : #6e42c1e1;
-    --rojo          : #dc3545;
-    --naranja       : #fd7e14;
-    --amarillo      : #ffc107;
-    --verde         : #198754;
-    --teal          : #20c997;
-    --gris          : #adb5bd;
-    --fondo         : #f2f2f2;
-    
-    /* Tipografía */
-    --tipo-principal   : 'Roboto', sans-serif;
-    --tipo-secundaria  : Verdana;
 
+:root {
+    /* Colores */
+    --negro: #393939;
+    --blanco: #fff;
+    --indigo: #6610f2;
+    --azul: #0d6efd;
+    --morado: #6e42c1e1;
+    --rojo: #dc3545;
+    --naranja: #fd7e14;
+    --amarillo: #ffc107;
+    --verde: #198754;
+    --teal: #20c997;
+    --gris: #adb5bd;
+    --fondo: #f2f2f2;
+    // Color Verde
+    --green-hunter: rgb(75, 149, 96);
+    --green-mint: rgb(142, 221, 101);
+    --green-fern: rgb(0, 184, 79);
+    --green-grinch: rgb(68, 214, 44);
+    --green-pine: rgb(40, 97, 64);
+    --green-pistacho: rgba(161, 216, 132);
+    --green-slime: rbg(151, 215, 0);
+    --green-olive: rgb(116, 170, 80);
+    /* Tipografía */
+    --tipo-principal: 'Roboto', sans-serif;
+    --tipo-secundaria: Verdana;
     /* Breakpoint */
     --xs: 0;
     --sm: 576px;
@@ -25,4 +33,4 @@
     --lg: 992px;
     --xl: 1200px;
     --xxl: 1400px;
-  }
+}

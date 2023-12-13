@@ -17,6 +17,14 @@
   --teal: #20c997;
   --gris: #adb5bd;
   --fondo: #f2f2f2;
+  --green-hunter: rgb(75, 149, 96);
+  --green-mint: rgb(142, 221, 101);
+  --green-fern: rgb(0, 184, 79);
+  --green-grinch: rgb(68, 214, 44);
+  --green-pine: rgb(40, 97, 64);
+  --green-pistacho: rgba(161, 216, 132);
+  --green-slime: rbg(151, 215, 0);
+  --green-olive: rgb(116, 170, 80);
   /* Tipografía */
   --tipo-principal: "Roboto", sans-serif;
   --tipo-secundaria: Verdana;
