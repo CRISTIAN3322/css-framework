@@ -17,6 +17,7 @@
   --teal: #20c997;
   --gris: #adb5bd;
   --fondo: #f2f2f2;
+  --green-pure: rgb(0, 143, 57);
   --green-hunter: rgb(75, 149, 96);
   --green-mint: rgb(142, 221, 101);
   --green-fern: rgb(0, 184, 79);
@@ -25,6 +26,15 @@
   --green-pistacho: rgba(161, 216, 132);
   --green-slime: rbg(151, 215, 0);
   --green-olive: rgb(116, 170, 80);
+  --black-pure: rgb(0, 0, 0);
+  --black-cinder: rgb(33, 35, 34);
+  --black-tabaco: rgb(45, 41, 38);
+  --black-anchor: rgb(38, 31, 42);
+  --black-smokie: rgb(37, 40, 42);
+  --black-charcoal: rgb(29, 37, 45);
+  --black-neutral: rgb(34, 34, 35);
+  --black-deep: rgb(16, 24, 32);
+  --black-renaissance: rgb(19, 30, 41);
   /* Tipografía */
   --tipo-principal: "Roboto", sans-serif;
   --tipo-secundaria: Verdana;
