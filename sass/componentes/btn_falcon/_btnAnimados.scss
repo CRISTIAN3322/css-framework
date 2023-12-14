@@ -4,8 +4,8 @@
     display: inline-flex;
     width: 100%;
     height: 80px;
-    background: var(--negro);
-    color: var(--blanco);
+    background: var(--black-cinder);
+    color: var(--white-pure);
     font-size: 20px;
     font-weight: 500;
     justify-content: center;
@@ -28,7 +28,7 @@
         content: '';
         width: 100%;
         height: 100%;
-        background: var(--gris);
+        background: var(--blue-navy);
         position: absolute;
         z-index: 1;
         top: -80px;
@@ -48,7 +48,7 @@
         z-index: 1;
         top: 0;
         left: calc(-140% - 80px);
-        border-bottom: 80px solid var(--azul);
+        border-bottom: 80px solid var(--blue-king);
         border-right: 80px solid transparent;
         transition: .9s ease-in-out all;
     }
@@ -61,7 +61,7 @@
         content: '';
         width: 100%;
         height: 300px;
-        background: var(--naranja);
+        background: var(--yellow-trafic);
         position: absolute;
         z-index: 1;
         top: -300px;
@@ -91,7 +91,7 @@
     
     &.btn-4:hover::after{
         transform: scale(300);
-        background: var(--rojo);
+        background: var(--purple-ursula);
     }
 
     &.btn-4:hover{
@@ -105,7 +105,7 @@
     }
 
     &.btn-5:hover {
-        background: var(--verde);
+        background: var(--green-pure);
     }
 
     &.btn-5 .icono {
@@ -119,7 +119,7 @@
     }
 
     &.btn-5 svg {
-        color: var(--blanco);
+        color: var(--white-pure);
         width: 35px;
         height: 35px;
     }
@@ -135,7 +135,7 @@
 
     &.btn-6 {
         background: none;
-        color: var(--negro);
+        color: var(--black-pure);
     }
 
     &.btn-6 svg{
@@ -150,7 +150,7 @@
     &.btn-6 rect{
         width: 100%;
         height: 100%;
-        stroke: var(--negro);
+        stroke: var(--black-pure);
         stroke-width: 10px;
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
