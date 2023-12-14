@@ -4,7 +4,7 @@
 /* ========== 👉 Variables ========== */
 /* Definimos las Custom properties */
 :root {
-  --fondo:rgb(240,236,227);
+  --fondo: rgb(240, 236, 227);
   --green-pure: rgb(0, 143, 57);
   --green-hunter: rgb(75, 149, 96);
   --green-mint: rgb(142, 221, 101);
@@ -24,42 +24,44 @@
   --black-neutral: rgb(34, 34, 35);
   --black-deep: rgb(16, 24, 32);
   --black-renaissance: rgb(19, 30, 41);
-  --purple-pure:rgb(87, 35, 100);
-  --purple-pale:rgb(104,91,199);
-  --purple-ursula:rgb(78,0,142);
-  --purple-ice-cream:rgb(139,132,215);
-  --purple-grapejuice:rgb(846,0,139);
-  --purple-lavender:rgb(150,120,211);
-  --purple-eggplant:rgb(68,0,153);
-  --purple-glossy:rgb(117,59,189);
-  --purple-royal:rgb(112,47,138);
+  --purple-pure: rgb(87, 35, 100);
+  --purple-pale: rgb(104, 91, 199);
+  --purple-ursula: rgb(78, 0, 142);
+  --purple-ice-cream: rgb(139, 132, 215);
+  --purple-grapejuice: rgb(846, 0, 139);
+  --purple-lavender: rgb(150, 120, 211);
+  --purple-eggplant: rgb(68, 0, 153);
+  --purple-glossy: rgb(117, 59, 189);
+  --purple-royal: rgb(112, 47, 138);
   --purple-indigo: rgb(102, 16, 242);
-  --blue-pure:rgb(0, 0, 255);
-  --blue-sky:rgb(48,127,226);
-  --blue-navy:rgb(0,51,160);
-  --blue-maya:rgb(0,156,222);
-  --blue-yale:rgb(0,94,184);
-  --blue-king:rgb(16,6,159);
-  --blue-baby:rgb(105,179,231);
-  --blue-azure:rgb(0,114,206);
-  --blue-serenity:rgb(58,93,174);
-  --yellow-pure:rgb(255, 255, 0);
-  --yellow-trafic:rgb(254,209,65);
-  --yellow-lemon:rgb(233,236,107);
-  --yellow-butter:rgb(250,224,83);
-  --yellor-true-yellow:rgb(247,234,72);
-  --yellow-sunnyside:rgb(251,225,34);
-  --yellow-blonde:rgb(243,234,93);
-  --yellow-bright:rgb(255,233,0);
-  --yellow-pastel:rgb(240,233,145);
-  --white-pure:rgb(255, 255, 255);
-  --white-letter:rgb(242,239,230);
-  --white-rice:rgb(253,248,235);
-  --white-perl:rgb(252,252,247);
-  --white-village:rgb(240,236,227);
-  --white-ceramic:rgb(254,255,250);
-  --white-hazelnut:rgb(243,235,223);
-  --white-passific:rgb(233,234,228);
+  --blue-pure: rgb(0, 0, 255);
+  --blue-sky: rgb(48, 127, 226);
+  --blue-navy: rgb(0, 51, 160);
+  --blue-maya: rgb(0, 156, 222);
+  --blue-yale: rgb(0, 94, 184);
+  --blue-king: rgb(16, 6, 159);
+  --blue-baby: rgb(105, 179, 231);
+  --blue-azure: rgb(0, 114, 206);
+  --blue-serenity: rgb(58, 93, 174);
+  --yellow-pure: rgb(255, 255, 0);
+  --yellow-trafic: rgb(254, 209, 65);
+  --yellow-lemon: rgb(233, 236, 107);
+  --yellow-butter: rgb(250, 224, 83);
+  --yellor-true-yellow: rgb(247, 234, 72);
+  --yellow-sunnyside: rgb(251, 225, 34);
+  --yellow-blonde: rgb(243, 234, 93);
+  --yellow-bright: rgb(255, 233, 0);
+  --yellow-pastel: rgb(240, 233, 145);
+  --white-pure: rgb(255, 255, 255);
+  --white-letter: rgb(242, 239, 230);
+  --white-rice: rgb(253, 248, 235);
+  --white-perl: rgb(252, 252, 247);
+  --white-village: rgb(240, 236, 227);
+  --white-ceramic: rgb(254, 255, 250);
+  --white-hazelnut: rgb(243, 235, 223);
+  --white-passific: rgb(233, 234, 228);
+  --red-pure: rgb(203, 50, 52);
+  --grey-pure: rgb(155, 155, 155);
   /* Tipografía */
   --tipo-principal: "Roboto", sans-serif;
   --tipo-secundaria: Verdana;
@@ -74,7 +76,9 @@
 
 /* ========== 👉 Reset PRO ========== */
 /* Reseteamos los margin y paddings de todas las etiquetas */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
@@ -82,12 +86,17 @@
   vertical-align: baseline;
 }
 
-*::before, *::after {
+*::before,
+*::after {
   display: block;
 }
 
 /* Evitamos problemas con las imagenes */
-img, picture, video, iframe, figure {
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -121,26 +130,48 @@ html {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-style: inherit;
   text-decoration: none;
   color: inherit;
 }
 
 /* Evitamos problemas con los pseudoelementos de quotes */
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
 
 /* (Opcional) Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: var(--black-pure);
+  color: var(--white-pure);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
-form, input, textarea, select, button, label {
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   hyphens: auto;
@@ -152,7 +183,9 @@ form, input, textarea, select, button, label {
 }
 
 /* Reseteamos las tablas */
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -230,8 +263,8 @@ body {
 
 /* ========== 👉 Navegación ========== */
 .barra {
-  background: var(--negro);
-  color: var(--gris);
+  background: var(--black-pure);
+  color: var(--grey-pure);
   margin-top: 0;
   position: sticky;
   top: 0;
@@ -239,7 +272,7 @@ body {
 }
 
 .nav {
-  background: var(--negro);
+  background: var(--black-pure);
   display: flex;
   flex-wrap: wrap;
 }
@@ -251,7 +284,7 @@ body {
 }
 
 .nav a {
-  color: var(--blanco);
+  color: var(--white-pure);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -263,7 +296,7 @@ body {
 
 .nav a.activo,
 .nav a:hover {
-  background: var(--gris);
+  background: var(--grey-pure);
 }
 
 /* ========== 👉 Menú Temario ========== */
@@ -281,7 +314,7 @@ body {
 }
 
 .temario_lista {
-  border-left: 2px solid var(--gris);
+  border-left: 2px solid var(--grey-pure);
   padding-left: 10px;
   margin-left: 10px;
 }
@@ -290,14 +323,14 @@ body {
   position: relative;
 }
 .temario_lista--li:hover::before {
-  border: 2px solid var(--naranja);
+  border: 2px solid var(--yellow-trafic);
 }
 .temario_lista--li.activo::before {
-  background: var(--rojo);
-  border: 3px solid var(--naranja);
+  background: var(--red-pure);
+  border: 3px solid var(--yellow-trafic);
 }
 .temario_lista--li.activo .temario_link {
-  color: var(--negro);
+  color: var(--black-pure);
   font-weight: 700;
 }
 .temario_lista--li::before {
@@ -306,7 +339,7 @@ body {
   height: 12px;
   width: 12px;
   background: var(--fondo);
-  border: 2px solid var(--amarillo);
+  border: 2px solid var(--yeloow-pure);
   position: absolute;
   left: -17px;
   transform: rotate(45deg);
@@ -321,7 +354,7 @@ body {
   transition: 0.3s ease all;
 }
 .temario_link:hover {
-  color: var(--negro);
+  color: var(--black-pure);
   font-weight: 700;
 }
 
@@ -340,7 +373,7 @@ form .input {
 }
 
 form .input:focus {
-  border: 1px solid var(--indigo);
+  border: 1px solid var(--purple-indigo);
   outline: none;
 }
 
@@ -566,7 +599,7 @@ form .input:focus {
 .card {
   padding: 40px;
   margin: 50px;
-  background: var(--blanco);
+  background: var(--white-pure);
   border-radius: 3px;
   box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
 }
@@ -600,10 +633,10 @@ form .input:focus {
 
 /* ========== 👉 Botones ========== */
 .boton {
-  background: var(--naranja);
+  background: var(--yellow-trafic);
   border: none;
   cursor: pointer;
-  color: var(--blanco);
+  color: var(--white-pure);
   display: inline-block;
   padding: 10px 15px;
   border-radius: 3px;
@@ -613,15 +646,16 @@ form .input:focus {
 }
 
 .boton:hover {
-  background: var(--amarillo);
+  background: var(--yellow-pure);
+  color: var(--black-pure);
 }
 
 .boton.verde {
-  background: var(--verde);
+  background: var(--green-pure);
 }
 
 .boton.verde:hover {
-  background: var(--teal);
+  background: var(--green-teal);
 }
 
 /* ==========  🔹 Botones Animados ========== */
@@ -706,7 +740,7 @@ form .input:focus {
 }
 .falconBtn.btn-4:hover::after {
   transform: scale(300);
-  background: var(--purple-ursula);
+  background: var(--red-pure);
 }
 .falconBtn.btn-4:hover {
   background: #960909;

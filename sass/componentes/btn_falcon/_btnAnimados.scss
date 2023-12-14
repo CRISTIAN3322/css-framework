@@ -1,6 +1,9 @@
 /* ==========  🔹 Botones Animados ========== */
+
+
 /* ! Estilo por defecto del Botón */
-.falconBtn{
+
+.falconBtn {
     display: inline-flex;
     width: 100%;
     height: 80px;
@@ -16,15 +19,12 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-
-    & span{
+    & span {
         position: relative;
         z-index: 2;
         transition: .3s ease all;
     }
-    
-
-    &.btn-1::after{
+    &.btn-1::after {
         content: '';
         width: 100%;
         height: 100%;
@@ -34,14 +34,11 @@
         top: -80px;
         left: 0;
         transition: .3s ease-in-out all;
-
     }
-    
-    &.btn-1:hover::after{
+    &.btn-1:hover::after {
         top: 0;
     }
-
-    &.btn-2::after{
+    &.btn-2::after {
         content: '';
         width: 135%;
         position: absolute;
@@ -52,12 +49,10 @@
         border-right: 80px solid transparent;
         transition: .9s ease-in-out all;
     }
-
-    &.btn-2:hover::after{
+    &.btn-2:hover::after {
         left: 0;
     }
-
-    &.btn-3::after{
+    &.btn-3::after {
         content: '';
         width: 100%;
         height: 300px;
@@ -68,14 +63,11 @@
         left: 0;
         transition: .9s ease-in-out all;
         border-radius: 0 0 300px 300px;
-
     }
-    
-    &.btn-3:hover::after{
+    &.btn-3:hover::after {
         top: 0;
     }
-
-    &.btn-4::after{
+    &.btn-4::after {
         content: '';
         width: 1px;
         height: 1px;
@@ -88,26 +80,21 @@
         border-radius: 100px;
         transform-origin: center;
     }
-    
-    &.btn-4:hover::after{
+    &.btn-4:hover::after {
         transform: scale(300);
-        background: var(--purple-ursula);
+        background: var(--red-pure);
     }
-
-    &.btn-4:hover{
+    &.btn-4:hover {
         background: #960909;
     }
-    
-    &.btn-5 span{
+    &.btn-5 span {
         transition: .5s ease-in-out all;
         position: absolute;
         left: 40%;
     }
-
     &.btn-5:hover {
         background: var(--green-pure);
     }
-
     &.btn-5 .icono {
         display: flex;
         align-items: center;
@@ -117,28 +104,23 @@
         transition: .9s ease-in-out all;
         opacity: 0;
     }
-
     &.btn-5 svg {
         color: var(--white-pure);
         width: 35px;
         height: 35px;
     }
-
     &.btn-5:hover .icono {
         left: calc(100% - 50px);
         opacity: 1;
     }
-
-    &.btn-5:hover span{
+    &.btn-5:hover span {
         left: 20px;
     }
-
     &.btn-6 {
         background: none;
         color: var(--black-pure);
     }
-
-    &.btn-6 svg{
+    &.btn-6 svg {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -146,8 +128,7 @@
         left: 0;
         fill: none
     }
-
-    &.btn-6 rect{
+    &.btn-6 rect {
         width: 100%;
         height: 100%;
         stroke: var(--black-pure);
@@ -156,15 +137,7 @@
         stroke-dashoffset: 1000;
         transition: .9s ease all;
     }
-
     &.btn-6:hover rect {
         stroke-dashoffset: 0;
     }
-
-
-
-    
 }
-
-
-

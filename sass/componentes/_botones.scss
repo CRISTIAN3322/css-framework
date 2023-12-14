@@ -1,26 +1,25 @@
 .boton {
-	background: var(--naranja);
-	border: none;
-	cursor: pointer;
-	color: var(--blanco);
-	display: inline-block;
-	padding: 10px 15px;
-	border-radius: 3px;
-	text-align: center;
-	line-height: 22px;
-	transition: .3s ease all;
+    background: var(--yellow-trafic);
+    border: none;
+    cursor: pointer;
+    color: var(--white-pure);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    transition: .3s ease all;
 }
 
 .boton:hover {
-	background: var(--amarillo);
+    background: var(--yellow-pure);
+    color: var(--black-pure);
 }
 
 .boton.verde {
-	background: var(--verde);
+    background: var(--green-pure);
 }
 
 .boton.verde:hover {
-	background: var(--teal);
+    background: var(--green-teal);
 }
-
-

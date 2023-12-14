@@ -1,17 +1,17 @@
 form * {
-	font-family: var(--fuente);
+    font-family: var(--fuente);
 }
 
 form .input {
-	padding: 10px 15px;
-	border-radius: 3px;
-	border: 1px solid #d6d6d6;
-	transition: .3s ease all;
-	width: 100%;
-	margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 form .input:focus {
-	border: 1px solid var(--indigo);
-	outline: none;
+    border: 1px solid var(--purple-indigo);
+    outline: none;
 }
