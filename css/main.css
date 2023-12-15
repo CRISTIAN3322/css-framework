@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* ========== 👉 Tipografias ========== */
+/* ========== 👉 Fonts ========== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-/* ========== 👉 Variables ========== */
+/* ========== 👉 Custom Property ========== */
 /* Definimos las Custom properties */
 :root {
   --fondo: rgb(240, 236, 227);
@@ -247,7 +247,7 @@ body {
   text-align: right;
 }
 
-/* ========== 👉 Contenedores ========== */
+/* ========== 👉 Container ========== */
 .contenedor {
   max-width: 90%;
   width: var(--xl);
@@ -261,7 +261,7 @@ body {
   margin: 20px auto;
 }
 
-/* ========== 👉 Navegación ========== */
+/* ========== 👉 Navigation ========== */
 .barra {
   background: var(--black-pure);
   color: var(--grey-pure);
@@ -339,7 +339,7 @@ body {
   height: 12px;
   width: 12px;
   background: var(--fondo);
-  border: 2px solid var(--yeloow-pure);
+  border: 2px solid var(--grey-pure);
   position: absolute;
   left: -17px;
   transform: rotate(45deg);
@@ -349,7 +349,7 @@ body {
 
 .temario_link {
   display: block;
-  color: #5a5a5a;
+  color: var(--black-pure);
   padding: 15px 10px;
   transition: 0.3s ease all;
 }
@@ -358,7 +358,7 @@ body {
   font-weight: 700;
 }
 
-/* ========== 👉 Formularios ========== */
+/* ========== 👉 Forms ========== */
 form * {
   font-family: var(--fuente);
 }
@@ -595,7 +595,7 @@ form .input:focus {
     grid-template-columns: repeat(12, 1fr);
   }
 }
-/* ========== 👉 Componentes ========== */
+/* ========== 👉 Components ========== */
 .card {
   padding: 40px;
   margin: 50px;
@@ -636,26 +636,19 @@ form .input:focus {
   background: var(--yellow-trafic);
   border: none;
   cursor: pointer;
-  color: var(--white-pure);
+  color: var(--black-pure);
   display: inline-block;
   padding: 10px 15px;
   border-radius: 3px;
   text-align: center;
   line-height: 22px;
   transition: 0.3s ease all;
+  border: 1px solid var(--black-pure);
 }
 
 .boton:hover {
   background: var(--yellow-pure);
   color: var(--black-pure);
-}
-
-.boton.verde {
-  background: var(--green-pure);
-}
-
-.boton.verde:hover {
-  background: var(--green-teal);
 }
 
 /* ==========  🔹 Botones Animados ========== */

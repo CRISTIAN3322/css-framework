@@ -1,27 +1,32 @@
-/* ========== 👉 Tipografias ========== */
+/* ========== 👉 Fonts ========== */
 @import 'base/typografias';
 
-/* ========== 👉 Variables ========== */
+/* ========== 👉 Custom Property ========== */
 @import 'base/variables';
 
 /* ========== 👉 Reset PRO ========== */
 @import 'base/reset';
-/* ========== 👉 Helpers ========== */
-@import 'base/helpers';
 
-/* ========== 👉 Contenedores ========== */
+/* ========== 👉 Helpers ========== */
+@import 'utilities/helpers';
+
+/* ========== 👉 Container ========== */
 @import 'layout/contenedores';
-/* ========== 👉 Navegación ========== */
+
+/* ========== 👉 Navigation ========== */
 @import 'layout/navegacion';
-/* ========== 👉 Formularios ========== */
+
+/* ========== 👉 Forms ========== */
 @import 'layout/formularios';
 
 /* ========== 👉 Grid ========== */
 @import 'layout/grid';
 
-/* ========== 👉 Componentes ========== */
+/* ========== 👉 Components ========== */
+
 @import 'componentes/card';
 @import 'componentes/fuentes';
+
 /* ========== 👉 Botones ========== */
 @import 'componentes/botones';
 @import 'componentes/btn_falcon/btnAnimados';

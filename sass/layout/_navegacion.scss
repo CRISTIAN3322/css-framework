@@ -76,7 +76,7 @@
         height: 12px;
         width: 12px;
         background: var(--fondo);
-        border: 2px solid var(--yeloow-pure);
+        border: 2px solid var(--grey-pure);
         position: absolute;
         left: -17px;
         transform: rotate(45deg);
@@ -87,7 +87,7 @@
 
 .temario_link {
     display: block;
-    color: #5a5a5a;
+    color: var(--black-pure);
     padding: 15px 10px;
     transition: .3s ease all;
     &:hover {

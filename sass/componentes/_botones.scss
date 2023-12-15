@@ -2,24 +2,17 @@
     background: var(--yellow-trafic);
     border: none;
     cursor: pointer;
-    color: var(--white-pure);
+    color: var(--black-pure);
     display: inline-block;
     padding: 10px 15px;
     border-radius: 3px;
     text-align: center;
     line-height: 22px;
     transition: .3s ease all;
+    border: 1px solid var(--black-pure);
 }
 
 .boton:hover {
     background: var(--yellow-pure);
     color: var(--black-pure);
-}
-
-.boton.verde {
-    background: var(--green-pure);
-}
-
-.boton.verde:hover {
-    background: var(--green-teal);
 }
