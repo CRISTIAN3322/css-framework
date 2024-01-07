@@ -72,6 +72,16 @@
   --lg: 992px;
   --xl: 1200px;
   --xxl: 1400px;
+  /* Z Index */
+  --z10: 10;
+  --z20: 20;
+  --z30: 30;
+  --z40: 40;
+  --z50: 50;
+  --z60: 60;
+  --z70: 70;
+  --z80: 80;
+  --z90: 90;
 }
 
 /* ========== 👉 Reset PRO ========== */
@@ -253,109 +263,6 @@ body {
   width: var(--xl);
   margin: 20px auto;
   overflow: hidden;
-}
-
-.contenedor-ancho {
-  width: 100%;
-  padding: 0 40px;
-  margin: 20px auto;
-}
-
-/* ========== 👉 Navigation ========== */
-.barra {
-  background: var(--black-pure);
-  color: var(--grey-pure);
-  margin-top: 0;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.nav {
-  background: var(--black-pure);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav .contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px auto;
-}
-
-.nav a {
-  color: var(--white-pure);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 15px 25px;
-  transition: 0.3s ease all;
-  font-size: 18px;
-}
-
-.nav a.activo,
-.nav a:hover {
-  background: var(--grey-pure);
-}
-
-/* ========== 👉 Menú Temario ========== */
-.temario {
-  padding: 0 15px;
-}
-
-.temario_titulo {
-  margin-bottom: 10px;
-}
-
-.temario_contenedor {
-  padding: 20px;
-  margin-top: 70px;
-}
-
-.temario_lista {
-  border-left: 2px solid var(--grey-pure);
-  padding-left: 10px;
-  margin-left: 10px;
-}
-
-.temario_lista--li {
-  position: relative;
-}
-.temario_lista--li:hover::before {
-  border: 2px solid var(--yellow-trafic);
-}
-.temario_lista--li.activo::before {
-  background: var(--red-pure);
-  border: 3px solid var(--yellow-trafic);
-}
-.temario_lista--li.activo .temario_link {
-  color: var(--black-pure);
-  font-weight: 700;
-}
-.temario_lista--li::before {
-  content: "";
-  display: block;
-  height: 12px;
-  width: 12px;
-  background: var(--fondo);
-  border: 2px solid var(--grey-pure);
-  position: absolute;
-  left: -17px;
-  transform: rotate(45deg);
-  top: calc(50% - 6px);
-  transition: 0.3s ease all;
-}
-
-.temario_link {
-  display: block;
-  color: var(--black-pure);
-  padding: 15px 10px;
-  transition: 0.3s ease all;
-}
-.temario_link:hover {
-  color: var(--black-pure);
-  font-weight: 700;
 }
 
 /* ========== 👉 Forms ========== */
@@ -619,18 +526,6 @@ form .input:focus {
   font-size: 2.75rem;
 }
 
-.titulo {
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-  color: #141414;
-  border: 5px solid #141414;
-  padding: 5px 10px;
-  display: inline-block;
-}
-
 /* ========== 👉 Botones ========== */
 .boton {
   background: var(--yellow-trafic);
@@ -649,147 +544,6 @@ form .input:focus {
 .boton:hover {
   background: var(--yellow-pure);
   color: var(--black-pure);
-}
-
-/* ==========  🔹 Botones Animados ========== */
-/* ! Estilo por defecto del Botón */
-.falconBtn {
-  display: inline-flex;
-  width: 100%;
-  height: 80px;
-  background: var(--black-cinder);
-  color: var(--white-pure);
-  font-size: 20px;
-  font-weight: 500;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s ease all;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-.falconBtn span {
-  position: relative;
-  z-index: 2;
-  transition: 0.3s ease all;
-}
-.falconBtn.btn-1::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: var(--blue-navy);
-  position: absolute;
-  z-index: 1;
-  top: -80px;
-  left: 0;
-  transition: 0.3s ease-in-out all;
-}
-.falconBtn.btn-1:hover::after {
-  top: 0;
-}
-.falconBtn.btn-2::after {
-  content: "";
-  width: 135%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: calc(-140% - 80px);
-  border-bottom: 80px solid var(--blue-king);
-  border-right: 80px solid transparent;
-  transition: 0.9s ease-in-out all;
-}
-.falconBtn.btn-2:hover::after {
-  left: 0;
-}
-.falconBtn.btn-3::after {
-  content: "";
-  width: 100%;
-  height: 300px;
-  background: var(--yellow-trafic);
-  position: absolute;
-  z-index: 1;
-  top: -300px;
-  left: 0;
-  transition: 0.9s ease-in-out all;
-  border-radius: 0 0 300px 300px;
-}
-.falconBtn.btn-3:hover::after {
-  top: 0;
-}
-.falconBtn.btn-4::after {
-  content: "";
-  width: 1px;
-  height: 1px;
-  background: none;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 47%;
-  transition: 0.9s ease-in-out all;
-  border-radius: 100px;
-  transform-origin: center;
-}
-.falconBtn.btn-4:hover::after {
-  transform: scale(300);
-  background: var(--red-pure);
-}
-.falconBtn.btn-4:hover {
-  background: #960909;
-}
-.falconBtn.btn-5 span {
-  transition: 0.5s ease-in-out all;
-  position: absolute;
-  left: 40%;
-}
-.falconBtn.btn-5:hover {
-  background: var(--green-pure);
-}
-.falconBtn.btn-5 .icono {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  left: -40px;
-  transition: 0.9s ease-in-out all;
-  opacity: 0;
-}
-.falconBtn.btn-5 svg {
-  color: var(--white-pure);
-  width: 35px;
-  height: 35px;
-}
-.falconBtn.btn-5:hover .icono {
-  left: calc(100% - 50px);
-  opacity: 1;
-}
-.falconBtn.btn-5:hover span {
-  left: 20px;
-}
-.falconBtn.btn-6 {
-  background: none;
-  color: var(--black-pure);
-}
-.falconBtn.btn-6 svg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: none;
-}
-.falconBtn.btn-6 rect {
-  width: 100%;
-  height: 100%;
-  stroke: var(--black-pure);
-  stroke-width: 10px;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  transition: 0.9s ease all;
-}
-.falconBtn.btn-6:hover rect {
-  stroke-dashoffset: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

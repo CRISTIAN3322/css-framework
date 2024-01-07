@@ -8,13 +8,10 @@
 @import 'base/reset';
 
 /* ========== 👉 Helpers ========== */
-@import 'utilities/helpers';
+@import 'base/helpers';
 
 /* ========== 👉 Container ========== */
 @import 'layout/contenedores';
-
-/* ========== 👉 Navigation ========== */
-@import 'layout/navegacion';
 
 /* ========== 👉 Forms ========== */
 @import 'layout/formularios';
@@ -29,5 +26,4 @@
 
 /* ========== 👉 Botones ========== */
 @import 'componentes/botones';
-@import 'componentes/btn_falcon/btnAnimados';
 
