@@ -1,6 +1,8 @@
 .contenedor {
-    max-width: 90%;
-    width: var(--xl);
-    margin: 20px auto;
-    overflow: hidden;
+    max-width: var(--xl);
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
 }
+

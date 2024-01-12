@@ -4,12 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="./odin-assets/png/logo-odin-3.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/main.css">
-    <title>Framework CSS</title>
+    <link rel="stylesheet" href="./odin-assets/css/personalizado-odin.css">
+    <title>Odin Framework CSS</title>
 </head>
 <body>
-    <main class="contenedor">
-        <h1 class="display-1">Display 1</h1>    
-    </main>
+    <header class="">
+        <nav class="navbar">
+            <a href="#"><img src="./odin-assets/sin-fondo/logo-odin-4-sin-fondo.png" alt="logo odin css"></a>
+            <div class="redes">
+                <img src="./iconos/Github-2.svg" alt="">
+                <img src="./iconos/Gmail.svg" alt="">
+            </div>
+        </nav>
+        <div class="contenedor">
+            <div class="contenedor-hero">
+                <div>
+                    <img src="./odin-assets/fondo-odin.png" alt="">
+                </div>
+                <div class="display-1">
+                    <h1>Odin el CSS Framework</h1>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+    <main>
+		<div class="contenedor">
+			<aside>
+				<h3 class="titulo">🪓 Indice</h3>
+				<nav class="indice">
+                    <a href="#variables">Custom properties</a>                   
+				</nav>
+			</aside>
+			<div class="contenido">
+				<div id="variables">
+					<h1 class="titulo display-1">Custom properties</h1>
+					<p>Listado de los nombres de las diferentes Custom Properties que se utilizan.</p>
+                    <h2>Colores :</h2>
+                    <details>
+                        <summary>Tonos Verdes</summary>
+                        <p class="paragraph" style="color: var(--green-pure);">--green-pure</p>
+                        <p class="paragraph" style="color: var(--green-hunter);">--green-hunter</p>
+                        <p class="paragraph" style="color: var(--green-mint);">--green-mint</p>
+                        <p class="paragraph" style="color: var(--green-fern);">--green-fern</p>
+                        <p class="paragraph" style="color: var(--green-grinch);">--green-grinch</p>
+                        <p class="paragraph" style="color: var(--green-pine);">--green-pine</p>
+                        <p class="paragraph" style="color: var(--green-pistacho);">--green-pistacho</p>
+                        <p class="paragraph" style="color: var(--green-slime);">--green-slime</p>
+                        <p class="paragraph" style="color: var(--green-olive);">--green-olive</p>
+                        <p class="paragraph" style="color: var(--green-teal);">--green-teal</p>
+                    </details>
+                    <details>
+                        <summary>Tonos Negros</summary>
+                        <p class="paragraph" style="color: var(--black-pure);">--black-pure</p>
+                        <p class="paragraph" style="color: var(--black-cinder);">--black-cinder</p>
+                        <p class="paragraph" style="color: var(--black-tabaco);">--black-tabaco</p>
+                        <p class="paragraph" style="color: var(--black-anchor);">--black-anchor</p>
+                        <p class="paragraph" style="color: var(--black-smokie);">--black-smokie</p>
+                        <p class="paragraph" style="color: var(--black-charcoal);">--black-charcoal</p>
+                        <p class="paragraph" style="color: var(--black-deep);">--black-deep</p>
+                        <p class="paragraph" style="color: var(--black-neutral);">--black-neutral</p>
+                        <p class="paragraph" style="color: var(--black-renaissance);">--black-renaissance</p>
+                    </details>
+                    <details>
+                        <summary>Tonos Morados</summary>
+                        <p class="paragraph" style="color: var(--purple-pure);">--purple-pure</p>
+                        <p class="paragraph" style="color: var(--purple-pale);">--purple-pale</p>
+                        <p class="paragraph" style="color: var(--purple-ursula);">--purple-ursula</p>
+                        <p class="paragraph" style="color: var(--purple-ice-cream);">--purple-ice-cream</p>
+                        <p class="paragraph" style="color: var(--purple-grapejuice);">--purple-grapejuice</p>
+                        <p class="paragraph" style="color: var(--purple-lavender);">--purple-lavender</p>
+                        <p class="paragraph" style="color: var(--purple-eggplant);">--purple-eggplant</p>
+                        <p class="paragraph" style="color: var(--purple-glossy);">--purple-glossy</p>
+                        <p class="paragraph" style="color: var(--purple-royal);">--purple-royal</p>
+                        <p class="paragraph" style="color: var(--purple-indigo);">--purple-indigo</p>
+                    </details>
+                    <details>
+                        <summary>Tonos Azules</summary>
+                        <p class="paragraph" style="color: var(--blue-pure);">--blue-pure</p>
+                        <p class="paragraph" style="color: var(--blue-sky);">--blue-sky</p>
+                        <p class="paragraph" style="color: var(--blue-navy);">--blue-navy</p>
+                        <p class="paragraph" style="color: var(--blue-maya);">--blue-maya</p>
+                        <p class="paragraph" style="color: var(--blue-yale);">--blue-yale</p>
+                        <p class="paragraph" style="color: var(--blue-king);">--blue-king</p>
+                        <p class="paragraph" style="color: var(--blue-baby);">--blue-baby</p>
+                        <p class="paragraph" style="color: var(--blue-azure);">--blue-azure</p>
+                        <p class="paragraph" style="color: var(--blue-serenity);">--blue-serenity</p>
+                    </details>
+                    <details>
+                        <summary>Tonos Amarillo</summary>
+                        <p class="paragraph" style="color: var(--yellow-pure);">--yellow-pure</p>
+                        <p class="paragraph" style="color: var(--yellow-trafic);">--yellow-trafic</p>
+                        <p class="paragraph" style="color: var(--yellow-lemon);">--yellow-lemon</p>
+                        <p class="paragraph" style="color: var(--yellow-butter);">--yellow-butter</p>
+                        <p class="paragraph" style="color: var(--yellor-true-yellow);">--yellor-true-yellow</p>
+                        <p class="paragraph" style="color: var(--yellow-sunnyside);">--yellow-sunnyside</p>
+                        <p class="paragraph" style="color: var(--yellow-blonde);">--yellow-blonde</p>
+                        <p class="paragraph" style="color: var(--yellow-bright);">--yellow-bright</p>
+                        <p class="paragraph" style="color: var(--yellow-pastel);">--yellow-pastel</p>
+                    </details>
+				</div>			
+
+			</div>
+		</div>
+	</main>
+   
 </body>
 </html>
