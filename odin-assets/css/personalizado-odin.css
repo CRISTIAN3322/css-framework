@@ -92,8 +92,23 @@ main .contenido p {
     color: var( --black-anchor);
 }
 
+details {
+    background: var(--black-smokie);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.fondo-details {
+    background: var(--white-letter);
+}
+
+.letra {
+    color: var(--black-smokie);
+}
+
 summary {
     font-weight: 700;
+    color: var(--white-letter);
 }
 
 .paragraph{
