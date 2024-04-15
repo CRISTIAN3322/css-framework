@@ -4,7 +4,7 @@
     margin-bottom: 20px;
 }
 
-/* Tamaño Grande - Computadoras y TV */
+/* 👉 Tamaño Grande - Computadoras y TV */
 .col-1 { grid-template-columns: repeat(1, 1fr); }
 .col-2 { grid-template-columns: repeat(2, 1fr); }
 .col-3 { grid-template-columns: repeat(3, 1fr); }
@@ -31,7 +31,7 @@
 .span-11 { grid-column: span 11; }
 .span-12 { grid-column: span 12; }
 
-/* Tamaño Mediano - Tablets */
+/* 👉 Tamaño Mediano - Tablets */
 @media screen and (max-width: 992px) {
 	.med-col-1 { grid-template-columns: repeat(1, 1fr); }
 	.med-col-2 { grid-template-columns: repeat(2, 1fr); }
@@ -60,7 +60,7 @@
 	.med-span-12 { grid-column: span 12; }
 }
 
-/* Tamaño Pequeño - Celulares */
+/* 👉 Tamaño Pequeño - Celulares */
 @media screen and (max-width: 576px) {
 	.peq-col-1 { grid-template-columns: repeat(1, 1fr); }
 	.peq-col-2 { grid-template-columns: repeat(2, 1fr); }
@@ -74,4 +74,19 @@
 	.peq-col-10 { grid-template-columns: repeat(10, 1fr); }
 	.peq-col-11 { grid-template-columns: repeat(11, 1fr); }
 	.peq-col-12 { grid-template-columns: repeat(12, 1fr); }
+
+	
+	.ped-span-1 { grid-column: span 1; }
+	.ped-span-2 { grid-column: span 2; }
+	.ped-span-3 { grid-column: span 3; }
+	.ped-span-4 { grid-column: span 4; }
+	.ped-span-5 { grid-column: span 5; }
+	.ped-span-6 { grid-column: span 6; }
+	.ped-span-7 { grid-column: span 7; }
+	.ped-span-8 { grid-column: span 8; }
+	.ped-span-9 { grid-column: span 9; }
+	.ped-span-10 { grid-column: span 10; }
+	.ped-span-11 { grid-column: span 11; }
+	.ped-span-12 { grid-column: span 12; }
+
 }

@@ -1,19 +1,20 @@
-/* Definimos las Custom properties */
+/* 👇 Definimos las Custom properties */
 
 :root {
+    /* 📌 Colores */
     --fondo: rgb(240, 236, 227);
-    // Color Verde
+    /* 👉 Color Verde */
     --green-pure: rgb(0, 143, 57);
     --green-hunter: rgb(75, 149, 96);
     --green-mint: rgb(142, 221, 101);
     --green-fern: rgb(0, 184, 79);
     --green-grinch: rgb(68, 214, 44);
     --green-pine: rgb(40, 97, 64);
-    --green-pistacho: rgba(161, 216, 132);
+    --green-pistacho: rgb(161, 216, 132);
     --green-slime: rgb(151, 215, 0);
     --green-olive: rgb(116, 170, 80);
     --green-teal: rgb(32, 201, 151);
-    // Color Negro
+    /* 👉 Color Negro */
     --black-pure: rgb(0, 0, 0);
     --black-cinder: rgb(33, 35, 34);
     --black-tabaco: rgb(45, 41, 38);
@@ -23,7 +24,7 @@
     --black-neutral: rgb(34, 34, 35);
     --black-deep: rgb(16, 24, 32);
     --black-renaissance: rgb(19, 30, 41);
-    // Color Morado
+    /* 👉 Color Morado */
     --purple-pure: rgb(87, 35, 100);
     --purple-pale: rgb(104, 91, 199);
     --purple-ursula: rgb(78, 0, 142);
@@ -34,7 +35,7 @@
     --purple-glossy: rgb(117, 59, 189);
     --purple-royal: rgb(112, 47, 138);
     --purple-indigo: rgb(102, 16, 242);
-    // Color Azul
+    /* 👉 Color Azul */
     --blue-pure: rgb(0, 0, 255);
     --blue-sky: rgb(48, 127, 226);
     --blue-navy: rgb(0, 51, 160);
@@ -44,7 +45,7 @@
     --blue-baby: rgb(105, 179, 231);
     --blue-azure: rgb(0, 114, 206);
     --blue-serenity: rgb(58, 93, 174);
-    // color Amarillo
+    /* 👉 Color Amarillo */
     --yellow-pure: rgb(255, 255, 0);
     --yellow-trafic: rgb(254, 209, 65);
     --yellow-lemon: rgb(233, 236, 107);
@@ -54,7 +55,7 @@
     --yellow-blonde: rgb(243, 234, 93);
     --yellow-bright: rgb(255, 233, 0);
     --yellow-pastel: rgb(240, 233, 145);
-    // color Blanco
+    /* 👉 Color Blanco */
     --white-pure: rgb(255, 255, 255);
     --white-letter: rgb(242, 239, 230);
     --white-rice: rgb(253, 248, 235);
@@ -63,23 +64,50 @@
     --white-ceramic: rgb(254, 255, 250);
     --white-hazelnut: rgb(243, 235, 223);
     --white-passific: rgb(233, 234, 228);
-    // Color Rojo
+    /* 👉 Color Rojo */
     --red-pure: rgb(203, 50, 52);
-    // Color Gris
+    --red-desire:rgb(244,54,76);
+    --red-maroon:rgb(158, 42, 43);
+    --red-warm:rgb(249,66,58);
+    --red-blush:rgb(255,88,93);
+    --red-blood:rgb(203,44,48);
+    --red-merlot: rgb(147,39,44);
+    --red-rust:rgb(192,76,54);
+    --red-lipstick:rgb(190,58,52);
+    /* 👉 Color Rosado */
+    --pink-cotton-candy:rgb(241,178,220);
+    --pink-punch:rgb(226,69,133);
+    --pink-barbie:rgb(223,25,149);
+    --pink-pearl:rgb(238,218,234);
+    --pink-bubblegum:rgb(240,78,152);
+    --pink-fuccia:rgb(234,39,194);
+    --pink-lemonade:rgb(248,163,188);
+    --pink-romantic:rgb(198,0,126);  
+    /* 👉 Color Marrón */
+    --brown-sand: rgb(212,181,158);
+    --brown-avellana: rgb(163,127,116);
+    --brown-sugar:rgb(148,121,93);
+    --brown-chocolate:rgb(112,63,42);
+    --brown-capuccino:rgb(191,148,116);
+    --brown-soft-sienna:rgb(213,162,134);
+    --brown-russete:rgb(134,74,51);   
+    /* 👉 Color Gris */
     --grey-pure: rgb(155, 155, 155);
-    /* Tipografía */
+    /* 📌 Tipografía */
+    /* 👉 Tipografia Base */
     --tipo-principal: 'Roboto', sans-serif;
     --tipo-secundaria: 'Open Sans', sans-serif;
-    /* Tipografía personalizada */
+    /* 👉 Tipografía personalizada */
     --bungee-spice-font : 'Bungee Spice', sans-serif;
-    /* Breakpoint */
+    --nordic-font:"NORDIC LIGHT", sans-serif;
+    /* 📌 Breakpoint */
     --xs: 0;
     --sm: 576px;
     --md: 768px;
     --lg: 992px;
     --xl: 1200px;
     --xxl: 1400px;
-    /* Z Index */
+    /* 📌 Z Index */
     --z10 : 10;
     --z20 : 20;
     --z30 : 30;
