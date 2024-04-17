@@ -268,8 +268,48 @@ body {
 }
 
 /* ======================== 
-        📗 Helpers 
+        📗 Bookshop
 ======================== */
+.clr-green-pure {
+  color: var(--grey-pure);
+}
+
+.clr-green-hunter {
+  color: var(--green-hunter);
+}
+
+.clr-green-mint {
+  color: var(green-mint);
+}
+
+.clr-green-fern {
+  color: var(--green-fern);
+}
+
+.clr-green-grinch {
+  color: var(--green-grinch);
+}
+
+.clr-green-pine {
+  color: var(-green-pine);
+}
+
+.clr-green-pistacho {
+  color: var(--green-pistacho);
+}
+
+.clr-green-slime {
+  color: var(--green-slime);
+}
+
+.clr-green-olive {
+  color: var(--green-olive);
+}
+
+.clr-green-teal {
+  color: var(--green-teal);
+}
+
 .no-margen {
   margin: 0;
 }
@@ -308,342 +348,6 @@ body {
 
 .texto-derecha {
   text-align: right;
-}
-
-/* ======================== 
-        📗 Container 
-======================== */
-.contenedor {
-  max-width: var(--xl);
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* ======================== 
-        📗 Forms 
-======================== */
-form * {
-  font-family: var(--fuente);
-}
-
-form .input {
-  padding: 10px 15px;
-  border-radius: 3px;
-  border: 1px solid #d6d6d6;
-  transition: 0.3s ease all;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-form .input:focus {
-  border: 1px solid var(--purple-indigo);
-  outline: none;
-}
-
-/* ======================== 
-        📗 Grid 
-======================== */
-.grid {
-  display: grid;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-/* 👉 Tamaño Grande - Computadoras y TV */
-.col-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.col-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.col-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.col-7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.col-8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.col-9 {
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.col-10 {
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.col-11 {
-  grid-template-columns: repeat(11, 1fr);
-}
-
-.col-12 {
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.span-1 {
-  grid-column: span 1;
-}
-
-.span-2 {
-  grid-column: span 2;
-}
-
-.span-3 {
-  grid-column: span 3;
-}
-
-.span-4 {
-  grid-column: span 4;
-}
-
-.span-5 {
-  grid-column: span 5;
-}
-
-.span-6 {
-  grid-column: span 6;
-}
-
-.span-7 {
-  grid-column: span 7;
-}
-
-.span-8 {
-  grid-column: span 8;
-}
-
-.span-9 {
-  grid-column: span 9;
-}
-
-.span-10 {
-  grid-column: span 10;
-}
-
-.span-11 {
-  grid-column: span 11;
-}
-
-.span-12 {
-  grid-column: span 12;
-}
-
-/* 👉 Tamaño Mediano - Tablets */
-@media screen and (max-width: 992px) {
-  .med-col-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .med-col-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .med-col-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .med-col-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .med-col-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .med-col-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .med-col-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .med-col-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .med-col-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .med-col-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .med-col-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .med-col-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .med-span-1 {
-    grid-column: span 1;
-  }
-  .med-span-2 {
-    grid-column: span 2;
-  }
-  .med-span-3 {
-    grid-column: span 3;
-  }
-  .med-span-4 {
-    grid-column: span 4;
-  }
-  .med-span-5 {
-    grid-column: span 5;
-  }
-  .med-span-6 {
-    grid-column: span 6;
-  }
-  .med-span-7 {
-    grid-column: span 7;
-  }
-  .med-span-8 {
-    grid-column: span 8;
-  }
-  .med-span-9 {
-    grid-column: span 9;
-  }
-  .med-span-10 {
-    grid-column: span 10;
-  }
-  .med-span-11 {
-    grid-column: span 11;
-  }
-  .med-span-12 {
-    grid-column: span 12;
-  }
-}
-/* 👉 Tamaño Pequeño - Celulares */
-@media screen and (max-width: 576px) {
-  .peq-col-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .peq-col-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .peq-col-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .peq-col-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .peq-col-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .peq-col-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .peq-col-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .peq-col-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .peq-col-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .peq-col-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .peq-col-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .peq-col-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .ped-span-1 {
-    grid-column: span 1;
-  }
-  .ped-span-2 {
-    grid-column: span 2;
-  }
-  .ped-span-3 {
-    grid-column: span 3;
-  }
-  .ped-span-4 {
-    grid-column: span 4;
-  }
-  .ped-span-5 {
-    grid-column: span 5;
-  }
-  .ped-span-6 {
-    grid-column: span 6;
-  }
-  .ped-span-7 {
-    grid-column: span 7;
-  }
-  .ped-span-8 {
-    grid-column: span 8;
-  }
-  .ped-span-9 {
-    grid-column: span 9;
-  }
-  .ped-span-10 {
-    grid-column: span 10;
-  }
-  .ped-span-11 {
-    grid-column: span 11;
-  }
-  .ped-span-12 {
-    grid-column: span 12;
-  }
-}
-/* ======================== 
-        📗 Components 
-======================== */
-.card {
-  padding: 40px;
-  margin: 50px;
-  background: var(--white-pure);
-  border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
-}
-
-.display-1 {
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-.display-2 {
-  font-weight: 700;
-  font-size: 3.375rem;
-}
-
-.display-3 {
-  font-weight: 700;
-  font-size: 2.75rem;
-}
-
-/* ======================== 
-        📗 Botones 
-======================== */
-.boton {
-  background: var(--yellow-trafic);
-  border: none;
-  cursor: pointer;
-  color: var(--black-pure);
-  display: inline-block;
-  padding: 10px 15px;
-  border-radius: 3px;
-  text-align: center;
-  line-height: 22px;
-  transition: 0.3s ease all;
-  border: 1px solid var(--black-pure);
-}
-
-.boton:hover {
-  background: var(--yellow-pure);
-  color: var(--black-pure);
 }
 
 /*# sourceMappingURL=main.css.map */
